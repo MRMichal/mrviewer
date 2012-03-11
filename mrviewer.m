@@ -9,11 +9,7 @@ addpath(fullfile('..','mrtoolbox'))
 
 % get inDir if not specified
 if ~exist('inDir','var')
-    % inDir = uigetdir;
-    
-    % inDir='/Users/Rezonans1/Desktop/Perfuzja/badania_matlab/';
-    inDir='D:\Data\perfusia nowy2 matrix\';
-    % inDir = '/Users/Rezonans1/Desktop/TAG/tag_results_matlab/SPIEWAK MATEUSZ';
+    inDir = uigetdir;
 end
 
 [mrListDirs,mrListFiles]=mrlist(inDir);
